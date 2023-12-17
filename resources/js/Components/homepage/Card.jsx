@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link, Head } from "@inertiajs/react";
 import CardItems from "./Items/CardItems";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="flex flex-col justify-center items-center ">
             <h1 className="text-4xl font-semibold text-[#242328] text-center">
