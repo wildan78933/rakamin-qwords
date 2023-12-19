@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HostingController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,9 +18,20 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/', [HostingController::class, 'index'])->name('hosting.index');
+
+// Route::group(['prefix' => '/'], function () {
+//     Route::get('/', [ServicesController::class, 'index'])->name('services.index');
+// });
 
 
-Route::get('/', [HostingController::class, 'index']);
+// Route::get('/', [HostingController::class, 'index']);
+// Route::get('/services', [ServicesController::class, 'index']);
+
+
+
+// Route::get('/', [HostingController::class, 'index']);
+// Route::get('/', [ServicesController::class, 'index']);
 
 
 // Route::get('/', function () {

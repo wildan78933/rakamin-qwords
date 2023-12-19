@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('subtitle');
-            $table->decimal('original_price', 10, 2); // Harga asli tanpa diskon
+            $table->decimal('original_price', 10, 3); // Harga asli tanpa diskon
             $table->decimal('discount_persen', 5, 2); // '5' adalah total digit dan '2' adalah digit di belakang koma
-            $table->decimal('discounted_price', 10, 2); // Harga setelah diskon
+            $table->decimal('discounted_price', 10, 3); // Harga setelah diskon
             $table->string('disk_space'); // Ruang disk
             $table->string('core_cpu'); // Jumlah core CPU
             $table->string('bandwidth'); // Bandwidth

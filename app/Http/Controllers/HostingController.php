@@ -15,7 +15,7 @@ class HostingController extends Controller
     {
         $hosting = Hosting::all();
         return Inertia::render('Main', [
-            'title' => "Yo",
+            'title' => "Yo 1",
             'description' => "Selamat Datangg",
             'hosting' => $hosting,
 

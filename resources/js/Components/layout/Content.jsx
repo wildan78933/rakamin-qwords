@@ -4,6 +4,12 @@ import Card from "../homepage/Card";
 import Services from "../homepage/Services";
 import Solution from "../homepage/Solution";
 import { Link, Head } from "@inertiajs/react";
+import Commitment from "../homepage/Commitment";
+import LogoCustomer from "../homepage/LogoCustomer";
+import LogoPartner from "../homepage/LogoPartner";
+import Testimonial from "../homepage/Testimonial";
+import LogoNews from "../homepage/LogoNews";
+import Accordion from "../homepage/Accordion";
 
 const Content = (props) => {
     return (
@@ -12,6 +18,12 @@ const Content = (props) => {
             <Card />
             <Services />
             <Solution />
+            <Commitment />
+            <LogoCustomer />
+            <LogoPartner />
+            <Testimonial />
+            <LogoNews />
+            <Accordion />
         </div>
     );
 };
