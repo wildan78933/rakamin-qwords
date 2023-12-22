@@ -63,7 +63,7 @@ const ComItems = () => {
     ]);
 
     return (
-        <div className="grid grid-cols-2 gap-x-12 gap-y-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-2">
             {items.map((item, index) => (
                 <div
                     key={index}

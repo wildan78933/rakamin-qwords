@@ -13,7 +13,7 @@ import Accordion from "../homepage/Accordion";
 
 const Content = (props) => {
     return (
-        <div className="max-w-screen flex flex-col gap-24 pb-24">
+        <div className="max-w-screen-xl lg:mx-auto mx-6 flex flex-col gap-24 pb-24">
             <Hero />
             <Card />
             <Services />

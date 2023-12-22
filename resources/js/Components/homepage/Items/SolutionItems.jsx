@@ -51,17 +51,17 @@ const SolutionItems = () => {
     ];
 
     return (
-        <div className="flex flex-row justify-between items-center">
-            <div className="w-1/2">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-between md:gap-14 items-center">
+            <div className="lg:w-1/2 md:w-1/2 w-full">
                 <img
                     src="https://www.qwords.com/wp-content/themes/qwords/assets/images/illustrations/Web%20hosting%20untuk%20bisnis%20profesional.webp"
                     alt=""
                 />
             </div>
-            <div className="w-2/5 grid grid-rows-3">
+            <div className="lg:w-2/5 grid grid-rows-3">
                 {solutions.map((solution) => (
                     <a key={solution.id} href={solution.href}>
-                        <div className="  flex flex-col px-7 py-3 gap-5">
+                        <div className=" flex flex-col lg:px-7 py-3 gap-5">
                             <span className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row gap-5 justify-start items-center ">
                                     <FontAwesomeIcon

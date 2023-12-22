@@ -30,8 +30,8 @@ const TestiItems = () => {
     ];
 
     return (
-        <div className="flex flex-row gap-x-10">
-            <div className="w-96 carousel rounded-box">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-x-10">
+            <div className="w-80 lg:w-96 carousel rounded-box">
                 {slides.map((slide) => (
                     <div key={slide.id} className="carousel-item w-full">
                         <a href={slide.url}>

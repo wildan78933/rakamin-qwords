@@ -36,8 +36,8 @@ const LogoCustomerItems = () => {
         .sort((logoA, logoB) => logoA.id - logoB.id);
 
     return (
-        <div>
-            <div className="flex flex-row my-12 ">
+        <div className="">
+            <div className="lg:flex lg:flex-row my-12 grid grid-cols-2 md:grid-cols-3 ">
                 {sortedLogos.map((logo) => (
                     <img
                         className="w-48"

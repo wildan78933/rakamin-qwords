@@ -33,7 +33,7 @@ const LogoPartnerItems = () => {
 
     return (
         <div>
-            <div className="flex flex-row my-12 ">
+            <div className="lg:flex lg:flex-row my-12 grid md:grid-cols-3 grid-cols-1 items-center justify-center ">
                 {sortedLogos.map((logo) => (
                     <img
                         className="w-40"

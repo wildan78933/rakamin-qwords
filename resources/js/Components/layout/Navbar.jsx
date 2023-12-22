@@ -4,7 +4,7 @@ import PrimaryButton from "../PrimaryButton";
 
 export default function Navbar(props) {
     return (
-        <div className="navbar bg-base-100 mt-2 mb-10">
+        <div className="navbar bg-base-100 mt-2 mb-10 px-24">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div

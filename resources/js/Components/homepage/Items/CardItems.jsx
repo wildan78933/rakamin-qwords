@@ -289,7 +289,7 @@ const CardItems = () => {
     };
 
     return (
-        <div className=" grid grid-cols-4 gap-4 items-center justify-between">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center justify-between">
             {props.hosting && props.hosting.length > 0 ? (
                 props.hosting.map((data, i) => (
                     <div
