@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 
 const Footer = () => {
     return (
-        <footer className="bg-white  dark:bg-gray-900  text-white px-6 lg:px-24 py-20">
-            <div className="lg:footer">
-                <div className="grid gap-8">
+        <footer className="bg-white  dark:bg-gray-900 text-white px-6 lg:px-24 ">
+            <div className="lg:footer py-20 gap-12 lg:space-x-36">
+                <div className="space-y-10">
                     <img
                         src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/logo-dark.webp"
                         alt=""
-                        className="w-1/3"
+                        className="w-1/2 lg:w-1/2  md:w-1/3"
                     />
                     <h2 className="text-xl font-semibold">
                         PT Qwords Company International
@@ -17,11 +17,13 @@ const Footer = () => {
                         Cloud Web Hosting Indonesia. Domain & hosting terbaik
                         dengan akses cepat yang didukung layanan support 24/7
                     </p>
-                    <img
-                        src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/bsi.webp"
-                        alt=""
-                        className="w-1/3"
-                    />
+                    <div>
+                        <img
+                            src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/bsi.webp"
+                            alt=""
+                            className="w-1/2 lg:w-1/2 md:w-1/3"
+                        />
+                    </div>
                     <div className="grid gap-3 pb-8">
                         <h2 className="text-xl font-semibold">Customer Care</h2>
                         <ul className="grid gap-2">
@@ -37,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid gap-8">
+                <div className="space-y-10">
                     <div className="grid gap-3">
                         <h2 className="text-xl font-semibold">Mengenai Kami</h2>
                         <ul className="grid gap-2">
@@ -50,7 +52,7 @@ const Footer = () => {
                             <li>Career & Employment</li>
                         </ul>
                     </div>
-                    <div className="grid gap-3">
+                    <div className="grid gap-3 pb-8">
                         <h2 className="text-xl font-semibold">MSA/SLA/AUP</h2>
                         <ul className="grid gap-2">
                             <li> Master Service Agreement</li>
@@ -62,8 +64,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="grid gap-8">
-                    <div className="grid gap-3">
+                <div className="space-y-10">
+                    <div className="grid gap-3 ">
                         <h2 className="text-xl font-semibold">
                             Layanan Lainnya
                         </h2>
@@ -98,7 +100,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="grid gap-8">
+                <div className="space-y-10">
                     <div className="grid gap-3">
                         <h2 className="text-xl font-semibold">
                             Kantor Surabaya
@@ -138,8 +140,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-6">
-                <h2>Terdaftar di PSE, ICANN dan Partner Lainnya</h2>
+            <div className="flex flex-col gap-6 mb-10">
+                <h2 className="text-xl font-semibold">
+                    Terdaftar di PSE, ICANN dan Partner Lainnya
+                </h2>
                 <span className="flex flex-row gap-3 items-center">
                     <div>
                         <a href="https://pse.kominfo.go.id/tdpse-detail/1447">
@@ -194,6 +198,55 @@ const Footer = () => {
                     </div>
                 </span>
             </div>
+            <nav className="flex flex-col justify-center items-center gap-4 py-5">
+                <div className="flex flex-row gap-4 ">
+                    <a href="https://www.facebook.com/qwordsdotcom">
+                        <img
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            className="fill-current"
+                            src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/Facebook.webp"
+                            alt=""
+                        />
+                    </a>
+                    <a href="https://www.instagram.com/qwordsdotcom/">
+                        <img
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            className="fill-current"
+                            src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/Instagram.webp"
+                            alt=""
+                        />
+                    </a>
+                    <a href="https://twitter.com/qwordsdotcom">
+                        <img
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            className="fill-current"
+                            src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/Twitter.webp"
+                            alt=""
+                        />
+                    </a>
+                    <a href="https://www.youtube.com/user/qwordsvideo">
+                        <img
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            className="fill-current"
+                            src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/Youtube.webp"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <aside>
+                    <p className=" text-center">
+                        Copyright © PT. Qwords Company International
+                    </p>
+                </aside>
+            </nav>
         </footer>
     );
 };

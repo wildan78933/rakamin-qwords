@@ -34,7 +34,7 @@ const ServicesItems = () => {
             {servicesData.map((service, index) => (
                 <div
                     key={index}
-                    className="rounded-2xl shadow-[0px_12px_51.8px_0px_rgba(255,110,7,0.15)] flex flex-col px-7 py-6 mt-10 gap-5"
+                    className="rounded-2xl shadow-[0px_12px_51.8px_0px_rgba(255,110,7,0.15)] flex flex-col px-7 py-6 mt-10 gap-5 justify-between"
                 >
                     <span className="flex flex-col gap-3">
                         <div className="flex flex-row gap-3 justify-start items-center">

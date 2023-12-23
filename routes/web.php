@@ -18,42 +18,13 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [HostingController::class, 'index'])->name('hosting.index');
-
-// Route::group(['prefix' => '/'], function () {
-//     Route::get('/', [ServicesController::class, 'index'])->name('services.index');
-// });
-
-
-// Route::get('/', [HostingController::class, 'index']);
-// Route::get('/services', [ServicesController::class, 'index']);
-
-
-
-// Route::get('/', [HostingController::class, 'index']);
-// Route::get('/', [ServicesController::class, 'index']);
-
-
-// Route::get('/', function () {
-//     return Inertia::render('Main', [
-//         'title' => 'HomeMain',
-//         'description' => 'Selamat datang'
-//     ]);
-// });
-
-
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return redirect('/');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/', [HostingController::class, 'index'])->name('hosting.index');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -12,7 +12,7 @@ export default function Main(props) {
                 title="
 	Qwords.com: Cloud Web Hosting Indonesia Akses Cepat Aman"
             />
-            <Navbar />
+            <Navbar user={props.auth.user} />
             <Content />
             <Footer />
         </div>

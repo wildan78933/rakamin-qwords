@@ -4,7 +4,7 @@ import CardItems from "./Items/CardItems";
 
 const Card = (props) => {
     return (
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center lg:px-24">
             <h1 className="text-2xl lg:text-4xl md:text-4xl font-semibold text-[#242328] text-center">
                 Cloud Hosting Indonesia <br />
                 <span className="font-bold text-4xl lg:text-5xl md:text-5xl text-[#FF6E07]">
