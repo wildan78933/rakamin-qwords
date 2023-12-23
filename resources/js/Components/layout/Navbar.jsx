@@ -604,15 +604,6 @@ export default function Navbar({ user }) {
                         ) : (
                             <>
                                 <li>
-                                    <Link className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link>Settings</Link>
-                                </li>
-                                <li>
                                     <Link
                                         href={route("logout")}
                                         method="post"
