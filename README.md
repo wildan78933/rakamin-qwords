@@ -47,13 +47,11 @@ Berikut adalah langkah-langkah untuk mengatur proyek di mesin lokal Anda:
 Setelah menjalankan command tersebut, cek file .env nya kemudian ubah "DB_DATABASE=" isikan bebas saja.
 
 lalu copy database yang sudah di isi tersebut ke :
-`bash
-    "http://localhost/phpmyadmin/"
-    `
+`http://localhost/phpmyadmin/`
 
-klik new dan create new table, isikan table nama saja dan klik create
+-   klik new dan create new table, isikan table nama saja dan klik create:
 
-7.  Jalankan server Laravel:
+7. Jalankan command berikut:
 
     ```bash
     php artisan migrate --seed
@@ -80,7 +78,7 @@ Setelah Selesai Baru jalankan server nya
     npm run dev
     ```
 
-10. buka aplikasi melalui browser di `localhost:8000`.
+10. Dan tinggal buka saja melalui browser anda dengan url: `localhost:8000`.
 
 ## Teknologi Yang Digunakan
 
